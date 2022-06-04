@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95E790F05C8F36CED5FE3C80 /* Pods_smarhHome4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E48B63CA468F8672508FE7 /* Pods_smarhHome4.framework */; };
+		DE170234284A67F000D35445 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE170233284A67F000D35445 /* AppDelegate.swift */; };
+		DE170236284A67F000D35445 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE170235284A67F000D35445 /* SceneDelegate.swift */; };
+		DE17023B284A67F000D35445 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE170239284A67F000D35445 /* Main.storyboard */; };
+		DE17023D284A67F200D35445 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE17023C284A67F200D35445 /* Assets.xcassets */; };
+		DE170240284A67F200D35445 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE17023E284A67F200D35445 /* LaunchScreen.storyboard */; };
+		DE170248284A692000D35445 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE170247284A692000D35445 /* AlertController.swift */; };
+		DE17024A284A692700D35445 /* CamerasModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE170249284A692700D35445 /* CamerasModels.swift */; };
+		DE17024C284A692B00D35445 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE17024B284A692B00D35445 /* DataManager.swift */; };
+		DE17024E284A692E00D35445 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE17024D284A692E00D35445 /* DetailViewController.swift */; };
+		DE170250284A693100D35445 /* DoorsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE17024F284A693100D35445 /* DoorsModels.swift */; };
+		DE170252284A693400D35445 /* Extension + MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE170251284A693400D35445 /* Extension + MainViewController.swift */; };
+		DE170254284A693700D35445 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE170253284A693700D35445 /* MainViewController.swift */; };
+		DE170256284A693900D35445 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE170255284A693900D35445 /* NetworkManager.swift */; };
+		DE170258284A693D00D35445 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE170257284A693D00D35445 /* RealmModel.swift */; };
+		DE17025A284A694200D35445 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE170259284A694200D35445 /* TableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		61243A9C445ACC96A837CDA5 /* Pods-smarhHome4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smarhHome4.release.xcconfig"; path = "Target Support Files/Pods-smarhHome4/Pods-smarhHome4.release.xcconfig"; sourceTree = "<group>"; };
+		C2E48B63CA468F8672508FE7 /* Pods_smarhHome4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smarhHome4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C692D4F4B5C00467F418349F /* Pods-smarhHome4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smarhHome4.debug.xcconfig"; path = "Target Support Files/Pods-smarhHome4/Pods-smarhHome4.debug.xcconfig"; sourceTree = "<group>"; };
+		DE170230284A67F000D35445 /* smarhHome4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smarhHome4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE170233284A67F000D35445 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE170235284A67F000D35445 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DE17023A284A67F000D35445 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE17023C284A67F200D35445 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE17023F284A67F200D35445 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE170241284A67F200D35445 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE170247284A692000D35445 /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		DE170249284A692700D35445 /* CamerasModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CamerasModels.swift; sourceTree = "<group>"; };
+		DE17024B284A692B00D35445 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		DE17024D284A692E00D35445 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DE17024F284A693100D35445 /* DoorsModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoorsModels.swift; sourceTree = "<group>"; };
+		DE170251284A693400D35445 /* Extension + MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension + MainViewController.swift"; sourceTree = "<group>"; };
+		DE170253284A693700D35445 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DE170255284A693900D35445 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DE170257284A693D00D35445 /* RealmModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		DE170259284A694200D35445 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE17022D284A67F000D35445 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E790F05C8F36CED5FE3C80 /* Pods_smarhHome4.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AD0C01FA5CA6F2F4BCD865A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2E48B63CA468F8672508FE7 /* Pods_smarhHome4.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1685C7B1B5B910CBDC2901D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C692D4F4B5C00467F418349F /* Pods-smarhHome4.debug.xcconfig */,
+				61243A9C445ACC96A837CDA5 /* Pods-smarhHome4.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DE14DE41284B79A20012566F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE170249284A692700D35445 /* CamerasModels.swift */,
+				DE17024F284A693100D35445 /* DoorsModels.swift */,
+				DE170257284A693D00D35445 /* RealmModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DE14DE42284B79A60012566F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DE170251284A693400D35445 /* Extension + MainViewController.swift */,
+				DE170253284A693700D35445 /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DE14DE44284B79B20012566F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE170239284A67F000D35445 /* Main.storyboard */,
+				DE17023E284A67F200D35445 /* LaunchScreen.storyboard */,
+				DE17024D284A692E00D35445 /* DetailViewController.swift */,
+				DE170247284A692000D35445 /* AlertController.swift */,
+				DE170259284A694200D35445 /* TableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE14DE45284B79B60012566F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				DE17024B284A692B00D35445 /* DataManager.swift */,
+				DE170255284A693900D35445 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		DE14DE46284B7A2C0012566F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				DE17023C284A67F200D35445 /* Assets.xcassets */,
+				DE170235284A67F000D35445 /* SceneDelegate.swift */,
+				DE170233284A67F000D35445 /* AppDelegate.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		DE170227284A67F000D35445 = {
+			isa = PBXGroup;
+			children = (
+				DE170232284A67F000D35445 /* smarhHome4 */,
+				DE170231284A67F000D35445 /* Products */,
+				1685C7B1B5B910CBDC2901D1 /* Pods */,
+				0AD0C01FA5CA6F2F4BCD865A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DE170231284A67F000D35445 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE170230284A67F000D35445 /* smarhHome4.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE170232284A67F000D35445 /* smarhHome4 */ = {
+			isa = PBXGroup;
+			children = (
+				DE14DE46284B7A2C0012566F /* Other */,
+				DE14DE41284B79A20012566F /* Models */,
+				DE14DE42284B79A60012566F /* Controllers */,
+				DE14DE44284B79B20012566F /* View */,
+				DE14DE45284B79B60012566F /* Managers */,
+				DE170241284A67F200D35445 /* Info.plist */,
+			);
+			path = smarhHome4;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE17022F284A67F000D35445 /* smarhHome4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE170244284A67F200D35445 /* Build configuration list for PBXNativeTarget "smarhHome4" */;
+			buildPhases = (
+				B71D86E48E02FFF85AEC2A1E /* [CP] Check Pods Manifest.lock */,
+				DE17022C284A67F000D35445 /* Sources */,
+				DE17022D284A67F000D35445 /* Frameworks */,
+				DE17022E284A67F000D35445 /* Resources */,
+				AFDDBC2A019C4045096AC265 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = smarhHome4;
+			productName = smarhHome4;
+			productReference = DE170230284A67F000D35445 /* smarhHome4.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE170228284A67F000D35445 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					DE17022F284A67F000D35445 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = DE17022B284A67F000D35445 /* Build configuration list for PBXProject "smarhHome4" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE170227284A67F000D35445;
+			productRefGroup = DE170231284A67F000D35445 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE17022F284A67F000D35445 /* smarhHome4 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE17022E284A67F000D35445 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE170240284A67F200D35445 /* LaunchScreen.storyboard in Resources */,
+				DE17023D284A67F200D35445 /* Assets.xcassets in Resources */,
+				DE17023B284A67F000D35445 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AFDDBC2A019C4045096AC265 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-smarhHome4/Pods-smarhHome4-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-smarhHome4/Pods-smarhHome4-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-smarhHome4/Pods-smarhHome4-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B71D86E48E02FFF85AEC2A1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-smarhHome4-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE17022C284A67F000D35445 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE170234284A67F000D35445 /* AppDelegate.swift in Sources */,
+				DE17024C284A692B00D35445 /* DataManager.swift in Sources */,
+				DE170256284A693900D35445 /* NetworkManager.swift in Sources */,
+				DE170258284A693D00D35445 /* RealmModel.swift in Sources */,
+				DE170248284A692000D35445 /* AlertController.swift in Sources */,
+				DE170252284A693400D35445 /* Extension + MainViewController.swift in Sources */,
+				DE17024E284A692E00D35445 /* DetailViewController.swift in Sources */,
+				DE17024A284A692700D35445 /* CamerasModels.swift in Sources */,
+				DE170254284A693700D35445 /* MainViewController.swift in Sources */,
+				DE17025A284A694200D35445 /* TableViewCell.swift in Sources */,
+				DE170250284A693100D35445 /* DoorsModels.swift in Sources */,
+				DE170236284A67F000D35445 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DE170239284A67F000D35445 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE17023A284A67F000D35445 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE17023E284A67F200D35445 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE17023F284A67F200D35445 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE170242284A67F200D35445 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE170243284A67F200D35445 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE170245284A67F200D35445 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C692D4F4B5C00467F418349F /* Pods-smarhHome4.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8C8XRB8SJ7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = smarhHome4/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.smarhHome4";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DE170246284A67F200D35445 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61243A9C445ACC96A837CDA5 /* Pods-smarhHome4.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8C8XRB8SJ7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = smarhHome4/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.smarhHome4";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE17022B284A67F000D35445 /* Build configuration list for PBXProject "smarhHome4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE170242284A67F200D35445 /* Debug */,
+				DE170243284A67F200D35445 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE170244284A67F200D35445 /* Build configuration list for PBXNativeTarget "smarhHome4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE170245284A67F200D35445 /* Debug */,
+				DE170246284A67F200D35445 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE170228284A67F000D35445 /* Project object */;
+}
