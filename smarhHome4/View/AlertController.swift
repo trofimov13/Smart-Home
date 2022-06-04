@@ -8,7 +8,7 @@
 import UIKit
 
 // создание алерт контроллера для редактирования имени
-class AlertController: UIAlertController {
+final class AlertController: UIAlertController {
     
     func action(with task: Task, completion: @escaping (String) -> Void) {
         

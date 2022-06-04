@@ -7,7 +7,7 @@
 
 import RealmSwift
 
-class DataManger {
+final class DataManger {
     
     static let shared = DataManger()
     let realm = try! Realm()

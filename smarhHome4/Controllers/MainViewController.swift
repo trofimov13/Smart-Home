@@ -8,7 +8,7 @@
 import UIKit
 import RealmSwift
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
     
     @IBOutlet weak var mainTableView: UITableView!
     @IBOutlet weak var segmentedControlButton: UISegmentedControl!
