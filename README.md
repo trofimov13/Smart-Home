@@ -13,4 +13,4 @@ http://cars.cprogroup.ru/api/rubetek/cameras/
 http://cars.cprogroup.ru/api/rubetek/doors/
 
 
-[Uploading Kapture 2022-06-04 at 17.41.03.gif…]()
+![Kapture 2022-06-04 at 17 41 03](https://user-images.githubusercontent.com/81037313/172008239-2a150925-4ca8-40f9-9d14-eec7a5ccd812.gif)
