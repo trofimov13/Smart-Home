@@ -66,6 +66,7 @@ final class MainViewController: UIViewController {
                 self.mainTableView.reloadData()
             }
         }
+        sleep(1)
         NetworkManager.shared.fetchDoors(from: doorsUrl) { myDoors in
             DispatchQueue.main.async {
                 self.myDoors = myDoors
