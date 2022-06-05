@@ -34,7 +34,7 @@ final class MainViewController: UIViewController {
     }
     
     //MARK: Navigation
-    // подготовка данных перед перходом
+    // подготовка данных перед переходом на второй экран
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let indexPath = mainTableView.indexPathForSelectedRow else {return}
         var detailImage = ""
@@ -49,7 +49,7 @@ final class MainViewController: UIViewController {
     
     // MARK: Function
     
-    //загрузка данных
+    //загрузка данных при включении
     private func preparationData(){
         taskList = DataManger.shared.realm.objects(TaskList.self)
         if taskList.isEmpty {
@@ -116,7 +116,7 @@ final class MainViewController: UIViewController {
         DataManger.shared.save(taskList: camerasList)
     }
     
-    //    рендеринд данных с дверей в БД
+    //    рендеринг данных с дверей в БД
     private func renderDoors(myDoors: DoorsModels){
         let doorsList = TaskList()
         
