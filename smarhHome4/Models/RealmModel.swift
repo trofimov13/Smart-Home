@@ -1,6 +1,6 @@
 //
 //  RealmModel.swift
-//  smartHome3
+//  smartHome
 //
 //  Created by Алексей Трофимов on 03.06.2022.
 //

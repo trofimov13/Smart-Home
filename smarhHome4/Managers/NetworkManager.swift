@@ -1,6 +1,6 @@
 //
 //  NetworkManager.swift
-//  smartHome3
+//  smartHome
 //
 //  Created by Алексей Трофимов on 02.06.2022.
 //
@@ -13,13 +13,13 @@ final class NetworkManager {
     
     private init() {}
     // получение джейсона по камерам
-    func fetchCameras(from urlString: String, with comlition: @escaping (CamerasModels) -> Void){
+    func fetchCameras(from urlString: String, with complition: @escaping (CamerasModels) -> Void){
         guard let url = URL(string: urlString) else { return }
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data else { return }
             do {
                 let myCamerasModels = try JSONDecoder().decode(CamerasModels.self, from: data)
-                comlition(myCamerasModels)
+                complition(myCamerasModels)
                 
             } catch let jsonError {
                 print(jsonError.localizedDescription)
@@ -28,13 +28,13 @@ final class NetworkManager {
     }
     
     //получение джейсона по дверям
-    func fetchDoors(from urlString: String, with comlition: @escaping (DoorsModels) -> Void){
+    func fetchDoors(from urlString: String, with complition: @escaping (DoorsModels) -> Void){
         guard let url = URL(string: urlString) else { return }
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data else { return }
             do {
                 let myDoorsModels = try JSONDecoder().decode(DoorsModels.self, from: data)
-                comlition(myDoorsModels)
+                complition(myDoorsModels)
                 
             } catch let jsonError {
                 print(jsonError.localizedDescription)

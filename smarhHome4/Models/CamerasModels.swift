@@ -1,6 +1,6 @@
 //
 //  CamerasModels.swift
-//  smartHome3
+//  smartHome
 //
 //  Created by Алексей Трофимов on 02.06.2022.
 //

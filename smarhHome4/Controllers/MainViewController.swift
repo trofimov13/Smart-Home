@@ -1,6 +1,6 @@
 //
 //  MainViewController.swift
-//  smartHome3
+//  smartHome
 //
 //  Created by Алексей Трофимов on 02.06.2022.
 //
@@ -29,7 +29,7 @@ final class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchData()
+        preparationData()
         mainTableView.refreshControl = mainRefresh
     }
     
@@ -50,28 +50,30 @@ final class MainViewController: UIViewController {
     // MARK: Function
     
     //загрузка данных
-    private func fetchData(){
+    private func preparationData(){
         taskList = DataManger.shared.realm.objects(TaskList.self)
         if taskList.isEmpty {
-            firstStart()
+            loadData()
         }
     }
     
     //подготовка данных для первого включения
-    private func firstStart(){
-        NetworkManager.shared.fetchCameras(from: camerasUrl) { myCameras in
-            DispatchQueue.main.async {
-                self.myCameras = myCameras
-                self.renderCameras(myCameras: myCameras)
-                self.mainTableView.reloadData()
+    private func loadData(){
+        let groupOne = DispatchGroup()
+            NetworkManager.shared.fetchCameras(from: self.camerasUrl) { myCameras in
+                DispatchQueue.main.async(group: groupOne) {
+                    self.myCameras = myCameras
+                    self.renderCameras(myCameras: myCameras)
+                    self.mainTableView.reloadData()
+                }
             }
-        }
-        sleep(1)
-        NetworkManager.shared.fetchDoors(from: doorsUrl) { myDoors in
-            DispatchQueue.main.async {
-                self.myDoors = myDoors
-                self.renderDoors(myDoors: myDoors)
-                self.mainTableView.reloadData()
+        groupOne.notify(queue: DispatchQueue.main) {
+            NetworkManager.shared.fetchDoors(from: self.doorsUrl) { myDoors in
+                DispatchQueue.main.async {
+                    self.myDoors = myDoors
+                    self.renderDoors(myDoors: myDoors)
+                    self.mainTableView.reloadData()
+                }
             }
         }
     }
@@ -80,7 +82,7 @@ final class MainViewController: UIViewController {
     @objc func refresh(sender: UIRefreshControl){
         taskList = DataManger.shared.realm.objects(TaskList.self)
         if taskList.isEmpty {
-            firstStart()
+            loadData()
         }
         segmentedControllTapped(segmentedControlButton)
         sender.endRefreshing()
