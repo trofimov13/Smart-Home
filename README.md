@@ -2,6 +2,8 @@
 The layout of the internship assignment:     
 https://www.figma.com/file/6pyQxZEo2Da34vGfOwO8MV/%D0%A1%D1%82%D0%B0%D0%B6%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0-iOS?node-id=0%3A1
 
+<img width="477" alt="Снимок экрана 2022-06-06 в 14 53 41" src="https://user-images.githubusercontent.com/81037313/172155896-6da5b388-9fc8-4bc9-84bc-a11d588b56e5.png">
+
 Interface Builder, MVC, RealmSwift 
 
 JSONs:   
